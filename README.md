@@ -17,18 +17,9 @@ A macOS Quick Look extension that provides syntax-highlighted previews for Visua
 
 ## Preview
 
-<!-- Add screenshots here -->
+<img src="https://raw.githubusercontent.com/lewiuberg/SlnQuickLook/refs/heads/main/examples/Example.slnx.png" width="720" alt="SLNX file preview with XML syntax highlighting">
 
-```
-TODO: Add screenshots showing:
-1. .slnx file preview with XML syntax highlighting
-2. .sln file preview with text-based highlighting
-3. Line numbers and copy functionality demo
-```
-
-<img src="https://raw.githubusercontent.com/lewiuberg/SlnQuickLook/refs/heads/main/examples/Example.sln.png" width="720">
-
-<img src="https://raw.githubusercontent.com/lewiuberg/SlnQuickLook/refs/heads/main/examples/Example.slnx.png" width="720">
+<img src="https://raw.githubusercontent.com/lewiuberg/SlnQuickLook/refs/heads/main/examples/Example.sln.png" width="720" alt="SLN file preview with text-based highlighting">
 
 ## Supported Formats
 
@@ -43,7 +34,7 @@ Both traditional text-based `.sln` files and modern XML-based `.slnx` files are 
 
 ```bash
 # Add the tap (once)
-brew tap YOUR_USERNAME/tap
+brew tap lewiuberg/tap
 
 # Install SlnQuickLook
 brew install --cask slnquicklook
@@ -51,21 +42,29 @@ brew install --cask slnquicklook
 
 After installation:
 
-1. Open the SlnQuickLook app once to register the extension
-2. Restart Finder: `killall Finder`
-3. Select a `.sln` or `.slnx` file and press **Space** to preview
+1. **Open the SlnQuickLook app** once to register the extension
+   - If macOS blocks it (unsigned app warning):
+     - Go to **System Settings** → **Privacy & Security**
+     - Scroll down and click **"Open Anyway"**
+     - Try opening the app again and confirm
+2. Reset Quick Look: `qlmanage -r && qlmanage -r cache`
+3. Restart Finder: `killall Finder`
+4. Select a `.sln` or `.slnx` file and press **Space** to preview
 
 ### Manual Installation
 
-1. Download the latest release from [Releases](https://github.com/YOUR_USERNAME/SlnQuickLook/releases)
+1. Download the latest release from [Releases](https://github.com/lewiuberg/SlnQuickLook/releases)
 2. Unzip and move `SlnQuickLook.app` to `/Applications/`
-3. Open the app once to register the Quick Look extension
-4. Restart Finder: `killall Finder`
-5. Reset Quick Look cache:
+3. **Open the app** once to register the Quick Look extension
+   - If macOS blocks it (unsigned app warning):
+     - Go to **System Settings** → **Privacy & Security**
+     - Scroll down and click **"Open Anyway"**
+     - Try opening the app again and confirm
+4. Reset Quick Look cache:
    ```bash
-   qlmanage -r
-   qlmanage -r cache
+   qlmanage -r && qlmanage -r cache
    ```
+5. Restart Finder: `killall Finder`
 
 ### Build from Source
 
@@ -76,7 +75,7 @@ Requirements:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/SlnQuickLook.git
+git clone https://github.com/lewiuberg/SlnQuickLook.git
 cd SlnQuickLook
 
 # Open in Xcode
@@ -203,15 +202,6 @@ Please ensure:
 - Changes are tested on macOS 12.0+
 - Commit messages are clear and descriptive
 
-## Roadmap
-
-- [ ] Add support for `.csproj` and `.vbproj` files
-- [ ] Configurable color themes
-- [ ] Font size adjustment
-- [ ] Export preview as HTML/PDF
-- [ ] Search within preview
-- [ ] Thumbnail generation for Finder icon view
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -233,10 +223,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you find this useful, please:
 
 - ⭐ Star the repository
-- 🐛 Report bugs via [Issues](https://github.com/YOUR_USERNAME/SlnQuickLook/issues)
-- 💡 Suggest features via [Issues](https://github.com/YOUR_USERNAME/SlnQuickLook/issues)
+- 🐛 Report bugs via [Issues](https://github.com/lewiuberg/SlnQuickLook/issues)
+- 💡 Suggest features via [Issues](https://github.com/lewiuberg/SlnQuickLook/issues)
 - 🔀 Submit pull requests
-
----
-
-Made with ❤️ for the macOS developer community
