@@ -51,7 +51,7 @@ git commit -m "Initial commit: SlnQuickLook v0.1.0"
 ### 2.3 Push to GitHub
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/SlnQuickLook.git
+git remote add origin https://github.com/lewiuberg/SlnQuickLook.git
 git branch -M main
 git push -u origin main
 ```
@@ -59,8 +59,8 @@ git push -u origin main
 ### 2.4 Create Initial Release
 
 1. Go to repository → Releases → "Create a new release"
-2. Tag version: `v1.0.0`
-3. Release title: `SlnQuickLook v1.0.0`
+2. Tag version: `v0.1.0`
+3. Release title: `SlnQuickLook v0.1.0`
 4. Description: List features and installation instructions
 5. Attach pre-built `.app` file (see Phase 3)
 6. Publish release
