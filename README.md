@@ -18,12 +18,17 @@ A macOS Quick Look extension that provides syntax-highlighted previews for Visua
 ## Preview
 
 <!-- Add screenshots here -->
+
 ```
 TODO: Add screenshots showing:
 1. .slnx file preview with XML syntax highlighting
 2. .sln file preview with text-based highlighting
 3. Line numbers and copy functionality demo
 ```
+
+<img src="https://raw.githubusercontent.com/lewiuberg/SlnQuickLook/refs/heads/main/examples/Example.sln.png" width="720">
+
+<img src="https://raw.githubusercontent.com/lewiuberg/SlnQuickLook/refs/heads/main/examples/Example.slnx.png" width="720">
 
 ## Supported Formats
 
@@ -45,6 +50,7 @@ brew install --cask slnquicklook
 ```
 
 After installation:
+
 1. Open the SlnQuickLook app once to register the extension
 2. Restart Finder: `killall Finder`
 3. Select a `.sln` or `.slnx` file and press **Space** to preview
@@ -64,6 +70,7 @@ After installation:
 ### Build from Source
 
 Requirements:
+
 - macOS 12.0 (Monterey) or later
 - Xcode 14.0 or later
 
@@ -106,6 +113,7 @@ open SlnQuickLook.xcodeproj
 ### Wrong file type association
 
 If another app is opening `.sln`/`.slnx` files:
+
 1. Right-click the file → Get Info
 2. Under "Open with:", select SlnQuickLook
 3. Click "Change All..."
@@ -113,6 +121,7 @@ If another app is opening `.sln`/`.slnx` files:
 ### Extension not loading
 
 Try re-registering the app:
+
 ```bash
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f -R /Applications/SlnQuickLook.app
 ```
@@ -131,11 +140,13 @@ Try re-registering the app:
 The extension provides custom syntax highlighting:
 
 **XML-based files (.slnx)**:
+
 - Green: XML tags (`<Project>`, `</Solution>`)
 - Blue: Attribute names (`Path=`, `Name=`)
 - Orange: Attribute values (`"src/..."`)
 
 **Text-based files (.sln)**:
+
 - Green: Keywords (`Project`, `EndProject`, `Global`)
 - Orange: String values (quoted text)
 - Gray: Comments (lines starting with `#`)
@@ -187,6 +198,7 @@ Contributions are welcome! Please:
 5. Open a Pull Request
 
 Please ensure:
+
 - Code follows Swift style guidelines
 - Changes are tested on macOS 12.0+
 - Commit messages are clear and descriptive
@@ -213,11 +225,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Author
 
 **Lewi Uberg**
+
 - GitHub: [@lewiuberg](https://github.com/lewiuberg)
 
 ## Support
 
 If you find this useful, please:
+
 - ⭐ Star the repository
 - 🐛 Report bugs via [Issues](https://github.com/YOUR_USERNAME/SlnQuickLook/issues)
 - 💡 Suggest features via [Issues](https://github.com/YOUR_USERNAME/SlnQuickLook/issues)
