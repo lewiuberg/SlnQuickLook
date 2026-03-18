@@ -22,7 +22,7 @@ This document outlines the steps to publish SlnQuickLook to GitHub and make it a
 
 ### 1.3 Version the Project
 
-- [ ] Decide on initial version number (recommend: `1.0.0`)
+- [ ] Decide on initial version number (recommend: `0.1.0`)
 - [ ] Update version in Xcode project settings
 - [ ] Update `CFBundleShortVersionString` and `CFBundleVersion` in Info.plist files
 
@@ -36,7 +36,7 @@ This document outlines the steps to publish SlnQuickLook to GitHub and make it a
 cd /Users/lewiuberg/Repositories/SlnQuickLook
 git init
 git add .
-git commit -m "Initial commit: SlnQuickLook v1.0.0"
+git commit -m "Initial commit: SlnQuickLook v0.1.0"
 ```
 
 ### 2.2 Create GitHub Repository
