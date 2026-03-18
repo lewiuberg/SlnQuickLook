@@ -9,13 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
+        VStack(spacing: 20) {
+            Image(systemName: "doc.text.magnifyingglass")
                 .imageScale(.large)
+                .font(.system(size: 60))
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            
+            Text("SlnQuickLook")
+                .font(.title)
+                .fontWeight(.bold)
+            
+            Text("Quick Look preview extension for .sln and .slnx files")
+                .font(.body)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+            
+            Text("Select a .sln or .slnx file in Finder and press Space to preview")
+                .font(.caption)
+                .foregroundStyle(.tertiary)
+                .multilineTextAlignment(.center)
+                .padding(.top, 10)
         }
-        .padding()
+        .padding(40)
+        .frame(maxWidth: 400)
     }
 }
 

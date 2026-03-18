@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution>
+
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+  </Folder>
+
+  <Folder Name="/src/">
+    <Project Path="src/Example.Api/Example.Api.csproj" />
+    <Project Path="src/Example.Core/Example.Core.csproj" />
+    <Project Path="src/Example.Infrastructure/Example.Infrastructure.csproj" />
+  </Folder>
+
+  <Folder Name="/tests/">
+    <Project Path="tests/Example.Tests/Example.Tests.csproj" />
+  </Folder>
+
+</Solution>

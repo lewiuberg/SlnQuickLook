@@ -1,0 +1,61 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.00000.0
+MinimumVisualStudioVersion = 10.0.40219.1
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AAAAAAA1-0000-0000-0000-000000000001}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AAAAAAA2-0000-0000-0000-000000000002}"
+EndProject
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AAAAAAA3-0000-0000-0000-000000000003}"
+EndProject
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Api", "src\\Example.Api\\Example.Api.csproj", "{BBBBBBB1-0000-0000-0000-000000000001}"
+EndProject
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Core", "src\\Example.Core\\Example.Core.csproj", "{BBBBBBB2-0000-0000-0000-000000000002}"
+EndProject
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Infrastructure", "src\\Example.Infrastructure\\Example.Infrastructure.csproj", "{BBBBBBB3-0000-0000-0000-000000000003}"
+EndProject
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Tests", "tests\\Example.Tests\\Example.Tests.csproj", "{BBBBBBB4-0000-0000-0000-000000000004}"
+EndProject
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBBBBBB1-0000-0000-0000-000000000001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBBBBB1-0000-0000-0000-000000000001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+
+		{BBBBBBB2-0000-0000-0000-000000000002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBBBBB2-0000-0000-0000-000000000002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+
+		{BBBBBBB3-0000-0000-0000-000000000003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBBBBB3-0000-0000-0000-000000000003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+
+		{BBBBBBB4-0000-0000-0000-000000000004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBBBBB4-0000-0000-0000-000000000004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+
+	GlobalSection(NestedProjects) = preSolution
+		{BBBBBBB1-0000-0000-0000-000000000001} = {AAAAAAA2-0000-0000-0000-000000000002}
+		{BBBBBBB2-0000-0000-0000-000000000002} = {AAAAAAA2-0000-0000-0000-000000000002}
+		{BBBBBBB3-0000-0000-0000-000000000003} = {AAAAAAA2-0000-0000-0000-000000000002}
+		{BBBBBBB4-0000-0000-0000-000000000004} = {AAAAAAA3-0000-0000-0000-000000000003}
+	EndGlobalSection
+
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

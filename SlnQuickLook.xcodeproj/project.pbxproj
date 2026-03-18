@@ -6,14 +6,63 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1B52861B2F6AC91D0042D3CD /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B52861A2F6AC91D0042D3CD /* Quartz.framework */; };
+		1B5286272F6AC91D0042D3CD /* SlnQuickLookPreviewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1B5286182F6AC91D0042D3CD /* SlnQuickLookPreviewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B5286252F6AC91D0042D3CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B5285FE2F6AC8AA0042D3CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B5286172F6AC91D0042D3CD;
+			remoteInfo = SlnQuickLookPreviewExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B52862C2F6AC91D0042D3CD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1B5286272F6AC91D0042D3CD /* SlnQuickLookPreviewExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1B5286062F6AC8AA0042D3CD /* SlnQuickLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlnQuickLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5286182F6AC91D0042D3CD /* SlnQuickLookPreviewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SlnQuickLookPreviewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B52861A2F6AC91D0042D3CD /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1B5286282F6AC91D0042D3CD /* Exceptions for "SlnQuickLookPreviewExtension" folder in "SlnQuickLookPreviewExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1B5286172F6AC91D0042D3CD /* SlnQuickLookPreviewExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1B5286082F6AC8AA0042D3CD /* SlnQuickLook */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SlnQuickLook;
+			sourceTree = "<group>";
+		};
+		1B52861C2F6AC91D0042D3CD /* SlnQuickLookPreviewExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1B5286282F6AC91D0042D3CD /* Exceptions for "SlnQuickLookPreviewExtension" folder in "SlnQuickLookPreviewExtension" target */,
+			);
+			path = SlnQuickLookPreviewExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +75,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1B5286152F6AC91D0042D3CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B52861B2F6AC91D0042D3CD /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				1B5286082F6AC8AA0042D3CD /* SlnQuickLook */,
+				1B52861C2F6AC91D0042D3CD /* SlnQuickLookPreviewExtension */,
+				1B5286192F6AC91D0042D3CD /* Frameworks */,
 				1B5286072F6AC8AA0042D3CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +100,17 @@
 			isa = PBXGroup;
 			children = (
 				1B5286062F6AC8AA0042D3CD /* SlnQuickLook.app */,
+				1B5286182F6AC91D0042D3CD /* SlnQuickLookPreviewExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1B5286192F6AC91D0042D3CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B52861A2F6AC91D0042D3CD /* Quartz.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +123,12 @@
 				1B5286022F6AC8AA0042D3CD /* Sources */,
 				1B5286032F6AC8AA0042D3CD /* Frameworks */,
 				1B5286042F6AC8AA0042D3CD /* Resources */,
+				1B52862C2F6AC91D0042D3CD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1B5286262F6AC91D0042D3CD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				1B5286082F6AC8AA0042D3CD /* SlnQuickLook */,
@@ -69,6 +139,28 @@
 			productName = SlnQuickLook;
 			productReference = 1B5286062F6AC8AA0042D3CD /* SlnQuickLook.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1B5286172F6AC91D0042D3CD /* SlnQuickLookPreviewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B5286292F6AC91D0042D3CD /* Build configuration list for PBXNativeTarget "SlnQuickLookPreviewExtension" */;
+			buildPhases = (
+				1B5286142F6AC91D0042D3CD /* Sources */,
+				1B5286152F6AC91D0042D3CD /* Frameworks */,
+				1B5286162F6AC91D0042D3CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1B52861C2F6AC91D0042D3CD /* SlnQuickLookPreviewExtension */,
+			);
+			name = SlnQuickLookPreviewExtension;
+			packageProductDependencies = (
+			);
+			productName = SlnQuickLookPreviewExtension;
+			productReference = 1B5286182F6AC91D0042D3CD /* SlnQuickLookPreviewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +173,9 @@
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					1B5286052F6AC8AA0042D3CD = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					1B5286172F6AC91D0042D3CD = {
 						CreatedOnToolsVersion = 26.3;
 					};
 				};
@@ -100,12 +195,20 @@
 			projectRoot = "";
 			targets = (
 				1B5286052F6AC8AA0042D3CD /* SlnQuickLook */,
+				1B5286172F6AC91D0042D3CD /* SlnQuickLookPreviewExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1B5286042F6AC8AA0042D3CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5286162F6AC91D0042D3CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +225,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1B5286142F6AC91D0042D3CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B5286262F6AC91D0042D3CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B5286172F6AC91D0042D3CD /* SlnQuickLookPreviewExtension */;
+			targetProxy = 1B5286252F6AC91D0042D3CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1B52860F2F6AC8AC0042D3CD /* Debug */ = {
@@ -254,14 +372,15 @@
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SlnQuickLook/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.uberg.SlnQuickLook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SlnQuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -284,19 +403,76 @@
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SlnQuickLook/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.uberg.SlnQuickLook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SlnQuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1B52862A2F6AC91D0042D3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SlnQuickLookPreviewExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SlnQuickLookPreviewExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberg.SlnQuickLook.SlnQuickLookPreviewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1B52862B2F6AC91D0042D3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SlnQuickLookPreviewExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SlnQuickLookPreviewExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uberg.SlnQuickLook.SlnQuickLookPreviewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,6 +496,15 @@
 			buildConfigurations = (
 				1B5286122F6AC8AC0042D3CD /* Debug */,
 				1B5286132F6AC8AC0042D3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B5286292F6AC91D0042D3CD /* Build configuration list for PBXNativeTarget "SlnQuickLookPreviewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B52862A2F6AC91D0042D3CD /* Debug */,
+				1B52862B2F6AC91D0042D3CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
